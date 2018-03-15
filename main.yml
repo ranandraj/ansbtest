@@ -1,4 +1,4 @@
 ---
 
-- host: test
+- hosts: test
   ping:
