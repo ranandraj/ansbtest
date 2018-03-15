@@ -1,13 +1,12 @@
 ---
 - hosts: webapp
-  
+  become: true  
   tasks:
-  - name: connection check
+  - name: Deploy to tomcat 
     maven_artifact:
-      group_id=arcode
-      artifact_id=arcode
-      extension=war
-      repository_url=http://localhost:8081/repository/mvnnexusrepo/arcode/arcode/1.0-SNAPSHOT
-      username=admin
-      password=admin123
-      dest=/usr/share/tomcat/webapps/prd.war
+      group_id: arcode
+      artifact_id: arcode
+      extension: war
+      repository_url: http://192.168.122.1:8081/repository/mvnnexusrepo/
+      dest: /usr/share/tomcat/webapps/prd.war
+      version: 1.0-SNAPSHOT
