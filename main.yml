@@ -3,4 +3,11 @@
   
   tasks:
   - name: connection check
-    ping:
+    maven_artifact:
+      group_id=com.company
+      artifact_id=sales-ui
+      extension=war
+      repository_url=http://localhost:8081/repository/mvnnexusrepo/arcode/arcode/1.0-SNAPSHOT
+      username=admin
+      password=admin123
+      dest=/usr/share/tomcat/webapps/prd.war
