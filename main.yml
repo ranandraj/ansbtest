@@ -1,0 +1,6 @@
+---
+- hosts: webapp
+  
+  tasks:
+  - name: connection check
+    ping:
