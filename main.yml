@@ -4,8 +4,8 @@
   tasks:
   - name: connection check
     maven_artifact:
-      group_id=com.company
-      artifact_id=sales-ui
+      group_id=arcode
+      artifact_id=arcode
       extension=war
       repository_url=http://localhost:8081/repository/mvnnexusrepo/arcode/arcode/1.0-SNAPSHOT
       username=admin
