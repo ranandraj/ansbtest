@@ -1,5 +1,0 @@
----
-- hosts: webapp
-  tasks:
-  - name : Check Server is up
-    ping:
